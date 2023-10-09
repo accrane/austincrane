@@ -1,0 +1,188 @@
+
+body {
+	font-family: 'martel';
+}
+h1, h2, h3, h4, h5, h6 {font-family: 'poppins-bold';}
+// div {
+// 	img {
+// 		width: 100%;
+// 	}
+// }
+h1 {
+	line-height: 1.2;
+}
+body.home {
+	background-color: $peach;
+	.burger span {
+		@include burger(30px, 3px, 6px, $white);
+	}
+}
+body.category {
+	background-color: $teal;
+	.burger span {
+		@include burger(30px, 3px, 6px, $white);
+	}
+}
+body.page-template-page-blog {
+	background-color: $peach;
+	.burger span {
+		@include burger(30px, 3px, 6px, $white);
+	}
+}
+body.single-post {
+	background-color: $white;
+	.burger span {
+		@include burger(30px, 3px, 6px, $peach);
+	}
+	.ac-logo {
+		img {
+			filter: invert(80%);
+		}
+	}
+}
+.ac-logo {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 10000;
+	width: 60px;
+	img {
+		width: 100%;
+	}
+}
+section.hero-phrase {
+	width: 100%;
+	padding: 60px 20px;
+	text-align: center;
+	overflow: hidden;
+	h1 {
+		font-size: 50px;
+		text-transform: uppercase;
+		color: $white;
+		line-height: .85;
+	}
+}
+.home-flex {
+	clear: both;
+	width: 90%;
+	margin: 0 auto;
+	@media screen and (min-width: $tabwidth) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.home-display {
+		margin: 20px auto;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		line-height: 0;
+		@media screen and (min-width: $tabwidth) {
+			margin: 20px;
+			flex-basis: 30%;
+			width: 30%;
+		}
+		img {
+			height: auto;
+			width: 100%;
+		}
+		.cube-overlay {
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			background-color: rgba(#fff, .7);
+			transform: translateY(-100%); 
+			transition: all ease .2s;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			line-height: 1.2;
+			color: $purple;
+			@media screen and (min-width: $tabwidth) {
+				padding: 20px;
+			}
+		}
+		&:hover {
+			.cube-overlay {
+				transform: translateY(0);
+			}
+		}
+	}
+}
+.burger-factoryz {
+	width: 80%;
+	margin: 0 auto;
+	@media screen and (min-width: $tabwidth) {
+		width: 300px;
+	}
+}
+.poppins-title {
+	font-family: 'poppins-bold';
+}
+article.post {
+	width: 90%;
+	margin: 30px auto;
+	@media screen and (min-width: $tabwidth) {
+		width: 60%;
+		margin: 60px auto 30px auto;
+	}
+	.entry-header {
+		margin-bottom: 20px;
+		padding: 20px 0;
+	}
+	h1 {
+		width: 100%;
+		font-size: 50px;
+		margin: 0;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.entry-meta {
+		font-size: 12px;
+		a {
+			color: $pink;
+			text-decoration: none;
+		}
+	}
+	p {
+		margin-bottom: 30px;
+	}
+}
+footer.footer {
+	width: 100%;
+	background-color: $peach;
+	padding: 20px 0;
+	#footer-menu {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		font-family: 'poppins-bold';
+		@media screen and (min-width: $tabwidth) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		li {
+			margin: 0;
+			list-style: none;
+		}
+		a {
+			color: $white;
+			padding: 5px 15px;
+			text-decoration: none;
+			transition: all ease .2s;
+			display: block;
+			&:hover {
+				color: $peach;
+				background-color: $white;
+			}
+		}
+	}
+}
