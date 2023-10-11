@@ -25,10 +25,10 @@ function js_custom_init() {
             'supports'  => array('title','editor')
         ),
         array(
-            'post_type' => 'location',
-            'menu_name' => 'Locations',
-            'plural'    => 'Locations',
-            'single'    => 'Location',
+            'post_type' => 'resource',
+            'menu_name' => 'Resources',
+            'plural'    => 'Resources',
+            'single'    => 'Resource',
             'menu_icon' => 'dashicons-location',
             'supports'  => array('title','editor')
         )
@@ -94,12 +94,12 @@ add_action( 'init', 'ii_custom_taxonomies', 0 );
 function ii_custom_taxonomies() {
         $posts = array(
             array(
-                'post_type' => 'teams',
-                'menu_name' => 'Team Groups',
-                'plural'    => 'Team Groups',
-                'single'    => 'Team Group',
-                'taxonomy'  => 'team-groups',
-                'rewrite'   => 'team'
+                'post_type' => 'resource',
+                'menu_name' => 'Resource Type',
+                'plural'    => 'Resource Types',
+                'single'    => 'Resource Type',
+                'taxonomy'  => 'rresource_type',
+                'rewrite'   => 'resource-type'
             ),
         );
     
