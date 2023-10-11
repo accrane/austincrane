@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<style type="text/css">
+	
+</style>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
@@ -35,14 +38,8 @@
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<!--	<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</header> .entry-header -->
-
 				<div class="entry-content">
-					<?php
-						the_content();
-					?>
+					<?php the_content(); ?>
 				</div><!-- .entry-content -->
 				
 			</article><!-- #post-## -->
@@ -52,5 +49,25 @@
 
 	</main><!-- #main -->
 </div><!-- #primary -->
+<script type="text/javascript">
+
+	gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.to('.sky', {
+    	scrollTrigger:{
+    		trigger: '.scrollStart',
+    		start: '10px top',
+    		end: '500px top',
+    		scrub: true,
+    		// markers: true,
+    	},
+    	y: -30,
+    	ease: 'none',
+    	duration: 3
+    });
+
+    
+    
+</script>
 <?php
 get_footer();
