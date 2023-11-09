@@ -3,7 +3,12 @@
  * Enqueue scripts and styles.
  */
 function bellaworks_scripts() {
-	wp_enqueue_style( 'bellaworks-style', get_stylesheet_uri() );
+	wp_enqueue_style( 
+		'bellaworks-style',
+		 get_stylesheet_uri(),
+		 array(),
+		 '0.23'
+	);
 
 	wp_deregister_script('jquery');
 		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?ver=3.5.1', false, '3.5.1', true);
