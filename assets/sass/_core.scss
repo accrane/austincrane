@@ -112,6 +112,15 @@ header.site-header {
 	clear: both;
 	padding: 60px 40px;
 }
+.entry-header {
+	margin-bottom: 60px;
+}
+.entry-content.contact-form {
+	@media screen and (min-width: $tabwidth) {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
 .home-flex {
 	clear: both;
 	width: 90%;

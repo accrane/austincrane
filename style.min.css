@@ -1336,6 +1336,7 @@ section.hero-phrase{width:100%;padding:60px 20px;text-align:center;overflow:hidd
 section.hero-phrase h1{font-size:50px;text-transform:uppercase;color:#fff;line-height:.85}
 header.site-header{width:100%;overflow:hidden}
 #content{width:100%;clear:both;padding:60px 40px}
+.entry-header{margin-bottom:60px}
 .home-flex{clear:both;width:90%;margin:0 auto}
 .home-flex .home-display{margin:20px auto;width:100%;position:relative;overflow:hidden;line-height:0}
 .home-flex .home-display img{height:auto;width:100%}
@@ -1393,6 +1394,7 @@ embed,iframe,object{max-width:100%}
 .menu-toggle{display:none}
 button.menu-toggle{display:none}
 button.menu-toggle{display:none}
+.entry-content.contact-form{width:60%;margin:0 auto}
 .home-flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .home-flex .home-display{margin:20px;-ms-flex-preferred-size:30%;flex-basis:30%;width:30%}
 .home-flex .home-display .cube-overlay{padding:20px}

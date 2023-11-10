@@ -22,7 +22,7 @@ get_header(); ?>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header>
 
-				<div class="entry-content">
+				<div class="entry-content contact-form">
 					<?php the_content(); ?>
 				</div><!-- .entry-content -->
 				
